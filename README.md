@@ -47,20 +47,6 @@ You can also tweak hyperparameters:
 python run_experiments.py --data_path ../credit_card.csv --hidden 32 --lr 0.001 --epochs 60
 ```
 
----
-
-## Report
-
-Use `docs/report_template.md` and replace the placeholders with:
-- your plots (saved in `artifacts/`)
-- your measured metrics (from `artifacts/metrics.json`)
-- your own discussion
-
-Also fill:
-- `docs/ai_dev_log_template.md`
-
----
-
 ## Notes
 - The dataset has a column named `default payment_next_month` (1 = default). The code treats **default=1** as the positive class.
 - This scaffold standardizes all features. (You may optionally one-hot encode categorical fields; document any changes.)
